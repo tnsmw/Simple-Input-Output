@@ -7,15 +7,21 @@
 }
 
 [data-theme='dark'] {
-   --color-background: #333;
+   --color-background: #110025;
    --color-border: #000;
-   --color-primary: rgba(255,255,0,0.8);
-   --color-text: rgba(255,255,255,0.8);
+   --color-text: #fff;
 }
 [data-theme='light'] .light {
    display: none;
 }
 [data-theme='dark'] .dark {
+   display: none;
+}
+
+[data-theme='light'] .sunset {
+   display: none;
+}
+[data-theme='dark'] .day {
    display: none;
 }
 
@@ -41,16 +47,12 @@ body {
 h1 {
    font-family: 'Press Start 2P', cursive;
    font-size: 2rem;
+   margin-top: 1%;
+   margin-bottom: 2%;
 }
 
 img {
-   opacity: var(--img-opacity);
-   transition: opacity 0.25s ease-out;
    width: 100%;
-}
-
-img:hover {
-   opacity: 1;
 }
 
 .grid {
